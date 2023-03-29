@@ -1,7 +1,6 @@
 package com.zipcodewilmington.froilansfarm.things.living;
 
-import com.zipcodewilmington.froilansfarm.Rideable;
-import com.zipcodewilmington.froilansfarm.Rider;
+
 
 public abstract class Person extends Animal{
     String name;
