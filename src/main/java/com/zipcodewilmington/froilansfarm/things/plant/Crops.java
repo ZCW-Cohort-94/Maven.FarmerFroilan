@@ -33,6 +33,10 @@ public class Crops<T extends Edible> implements Producer<T> {
 
     @Override
     public void yield() {
+        if (hasBeenHarvested == true
+            && hasBeenFertilized == true) {
+            T yield;
+        }
 
     }
 }
