@@ -39,4 +39,9 @@ public class Crops<T extends Edible> implements Producer<T> {
         }
 
     }
+
+    @Override
+    public void yield(T Edible) {
+
+    }
 }
