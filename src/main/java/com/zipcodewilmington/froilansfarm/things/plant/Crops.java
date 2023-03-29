@@ -31,17 +31,12 @@ public class Crops<T extends Edible> implements Producer<T> {
         this.hasBeenHarvested = hasBeenHarvested;
     }
 
-    @Override
-    public void yield() {
-        if (hasBeenHarvested == true
-            && hasBeenFertilized == true) {
-            T yield;
-        }
-
-    }
 
     @Override
     public void yield(T Edible) {
+        if (hasBeenFertilized == true && hasBeenHarvested == true) {
+
+        }
 
     }
 }
