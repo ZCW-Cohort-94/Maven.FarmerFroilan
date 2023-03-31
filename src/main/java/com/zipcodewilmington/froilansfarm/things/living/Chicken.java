@@ -14,8 +14,9 @@ public class Chicken extends Animal<CornEars> implements Producer<Egg>{
 
     @Override
     public Egg yield(boolean hasBeenFertilized) {
-        return new Egg();
-
+        if(hasBeenFertilized == true){
+            return new Egg();
+        }else return null;
     }
 
     @Override
