@@ -8,14 +8,14 @@ public class TestTomatoPlant {
     @Test
     public void testCrops() {
         Tomato tomato = new Tomato();
-        TomatoPlants test = new TomatoPlants(tomato);
+        Crops<Tomato> test = new TomatoPlants(tomato);
         Assert.assertTrue(test instanceof Crops);
     }
 
     @Test
     public void getHarvest() {
         Tomato tomato = new Tomato();
-        TomatoPlants test = new TomatoPlants(tomato);
+        Crops<Tomato> test = new TomatoPlants(tomato);
 
         boolean actual = test.hasBeenHarvested();
 
@@ -25,7 +25,7 @@ public class TestTomatoPlant {
     @Test
     public void getFertilization() {
         Tomato tomato = new Tomato();
-        TomatoPlants test = new TomatoPlants(tomato);
+        Crops<Tomato> test = new TomatoPlants(tomato);
 
         boolean actual = test.hasBeenFertilized();
 
@@ -35,7 +35,7 @@ public class TestTomatoPlant {
     @Test
     public void setHarvest() {
         Tomato tomato = new Tomato();
-        TomatoPlants test = new TomatoPlants(tomato);
+        Crops<Tomato> test = new TomatoPlants(tomato);
         boolean a = true;
         test.setHasBeenHarvested(a);
 
@@ -46,7 +46,7 @@ public class TestTomatoPlant {
     @Test
     public void setFertilization() {
         Tomato tomato = new Tomato();
-        TomatoPlants test = new TomatoPlants(tomato);
+        Crops<Tomato> test = new TomatoPlants(tomato);
         boolean a = true;
         test.setHasBeenFertilized(a);
 
@@ -58,7 +58,9 @@ public class TestTomatoPlant {
     @Test
     public void testYield() {
         Tomato tomato = new Tomato();
-        TomatoPlants test = new TomatoPlants(tomato);
+//        TomatoPlants test = new TomatoPlants(tomato);
+//        CornEars corn = new CornEars();
+        Crops<Tomato> test = new TomatoPlants(tomato);
         boolean a = true;
         test.yield(a);
 

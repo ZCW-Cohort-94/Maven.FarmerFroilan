@@ -7,15 +7,15 @@ import org.junit.Test;
 public class TestCornStalks {
         @Test
     public void testCrops() {
-        CornEars corn = new CornEars();
-        CornStalks test = new CornStalks(corn);
+            CornEars corn = new CornEars();
+            Crops<CornEars> test = new CornStalks(corn);
         Assert.assertTrue(test instanceof Crops);
     }
 
     @Test
     public void getHarvest() {
         CornEars corn = new CornEars();
-        CornStalks test = new CornStalks(corn);
+        Crops<CornEars> test = new CornStalks(corn);
 
         boolean actual = test.hasBeenHarvested();
 
@@ -25,7 +25,7 @@ public class TestCornStalks {
     @Test
     public void getFertilization() {
         CornEars corn = new CornEars();
-        CornStalks test = new CornStalks(corn);
+        Crops<CornEars> test = new CornStalks(corn);
 
         boolean actual = test.hasBeenFertilized();
 
@@ -35,7 +35,7 @@ public class TestCornStalks {
     @Test
     public void setHarvest() {
         CornEars corn = new CornEars();
-        CornStalks test = new CornStalks(corn);
+        Crops<CornEars> test = new CornStalks(corn);
         boolean a = true;
         test.setHasBeenHarvested(a);
 
@@ -46,7 +46,7 @@ public class TestCornStalks {
     @Test
     public void setFertilization() {
         CornEars corn = new CornEars();
-        CornStalks test = new CornStalks(corn);
+        Crops<CornEars> test = new CornStalks(corn);
         boolean a = true;
         test.setHasBeenFertilized(a);
 
@@ -66,8 +66,9 @@ public class TestCornStalks {
 
     @Test
     public void testYield() {
-        CornEars tomato = new CornEars();
-        CornStalks test = new CornStalks(tomato);
+        CornEars cornears = new CornEars();
+//        CornStalks test = new CornStalks(tomato);
+        Crops<CornEars> test = new CornStalks(cornears);
         boolean a = true;
         test.yield(a);
 
