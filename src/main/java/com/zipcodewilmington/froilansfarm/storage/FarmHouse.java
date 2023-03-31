@@ -5,5 +5,5 @@ import com.zipcodewilmington.froilansfarm.things.living.Person;
 
 import java.util.ArrayList;
 
-public class FarmHouse extends ArrayList<Person> implements Storage{
+public class FarmHouse extends ArrayList<Person> {
 }
