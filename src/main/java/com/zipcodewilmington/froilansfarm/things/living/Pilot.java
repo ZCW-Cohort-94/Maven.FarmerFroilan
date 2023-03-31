@@ -12,15 +12,6 @@ public class Pilot<Aircraft> extends Person implements Rider<AirCraft> {
 
     }
 
-    public boolean mount(AirCraft airCraft) {
-        return false;
-    }
-
-
-    public boolean dismount(AirCraft airCraft) {
-        return false;
-    }
-
     @Override
     public void eat() {
 
@@ -39,5 +30,9 @@ public class Pilot<Aircraft> extends Person implements Rider<AirCraft> {
     @Override
     public boolean dismount() {
         return false;
+    }
+
+    public String fly (AirCraft airCraft){
+        return "I'm cropdusting!";
     }
 }
