@@ -7,6 +7,6 @@ import com.zipcodewilmington.froilansfarm.Rider;
 public class Vehicle implements NoiseMaker, Rideable {
     @Override
     public String makeNoise() {
-        return null;
+        return "Vroom vroom!";
     }
 }

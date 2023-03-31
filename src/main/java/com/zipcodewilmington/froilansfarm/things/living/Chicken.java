@@ -1,17 +1,25 @@
 package com.zipcodewilmington.froilansfarm.things.living;
 
+import com.zipcodewilmington.froilansfarm.Eater;
 import com.zipcodewilmington.froilansfarm.Edible;
 import com.zipcodewilmington.froilansfarm.Producer;
+import com.zipcodewilmington.froilansfarm.things.plant.CornEars;
 
-public class Chicken extends Animal implements Producer{
+public class Chicken extends Animal<CornEars> implements Producer<Egg>{
 
     @Override
-    public void eat() {
+    public String makeNoise() {
+        return "Buckaw";
+    }
+
+    @Override
+    public Egg yield(boolean hasBeenFertilized) {
+        return new Egg();
 
     }
 
     @Override
-    public void yield(Edible edible) {
+    public void eat(Edible corn) {
 
     }
 }

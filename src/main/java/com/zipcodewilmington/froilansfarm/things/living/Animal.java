@@ -6,8 +6,9 @@ import com.zipcodewilmington.froilansfarm.NoiseMaker;
 
 import java.util.Collections;
 
-public abstract class Animal implements Eater<Edible>, NoiseMaker {
+public abstract class Animal<T extends Edible> implements Eater, NoiseMaker {
     public void eat(){
 
     }
+
 }
