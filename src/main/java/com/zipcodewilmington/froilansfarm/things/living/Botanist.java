@@ -6,9 +6,10 @@ import com.zipcodewilmington.froilansfarm.storage.Field;
 import com.zipcodewilmington.froilansfarm.things.plant.Crops;
 
 public class Botanist extends Person{
+    public Botanist(String name){}
     @Override
     public void eat(Edible edible) {
-
+        edible = null;
     }
     @Override
     public String makeNoise() {
@@ -16,6 +17,6 @@ public class Botanist extends Person{
     }
 
     public void plant(Crops crop, int plot){
-        Field.getField().add();
+     //   Field.getField().add();
     }
 }
