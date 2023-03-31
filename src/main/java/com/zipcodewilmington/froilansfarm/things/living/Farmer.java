@@ -5,6 +5,10 @@ import com.zipcodewilmington.froilansfarm.things.machine.Tractor;
 
 public class Farmer extends Botanist implements Rider{
 
+    public Farmer(String name) {
+        super(name);
+    }
+
     @Override
     public boolean mount() {
         return false;
