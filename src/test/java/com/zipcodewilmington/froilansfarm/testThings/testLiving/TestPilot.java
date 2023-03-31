@@ -16,21 +16,21 @@ public class TestPilot {
         Assert.assertEquals(expected,actual);
     }
 
-    @Test
-    public void mountTest(){
+//    @Test
+//    public void mountTest(){
+//
+//        boolean expected = false;
+//        boolean actual = pilot.mount();
+//
+//        Assert.assertEquals(expected, actual);
+//    }
+//
+//    @Test
+//    public void dismountTest(){
+//
+//        boolean expected = false;
+//        boolean actual = pilot.dismount();
 
-        boolean expected = false;
-        boolean actual = pilot.mount();
-
-        Assert.assertEquals(expected, actual);
-    }
-
-    @Test
-    public void dismountTest(){
-
-        boolean expected = false;
-        boolean actual = pilot.dismount();
-
-        Assert.assertEquals(expected, actual);
-    }
+//        Assert.assertEquals(expected, actual);
+//    }
 }

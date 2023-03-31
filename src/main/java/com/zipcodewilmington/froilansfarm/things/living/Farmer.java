@@ -10,12 +10,12 @@ public class Farmer extends Botanist implements Rider{
     }
 
     @Override
-    public boolean mount() {
-        return false;
+    public void mount() {
+
     }
 
     @Override
-    public boolean dismount() {
-        return false;
+    public void dismount() {
+
     }
 }

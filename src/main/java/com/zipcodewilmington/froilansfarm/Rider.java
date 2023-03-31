@@ -1,6 +1,6 @@
 package com.zipcodewilmington.froilansfarm;
 
 public interface Rider<T extends Rideable> {
-    public boolean mount();
-    public boolean dismount();
+    public void mount();
+    public void dismount();
 }
