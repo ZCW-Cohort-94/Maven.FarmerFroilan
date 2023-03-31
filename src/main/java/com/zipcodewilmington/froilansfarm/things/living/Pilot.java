@@ -3,7 +3,7 @@ package com.zipcodewilmington.froilansfarm.things.living;
 import com.zipcodewilmington.froilansfarm.Rider;
 import com.zipcodewilmington.froilansfarm.things.machine.AirCraft;
 
-public abstract class Pilot extends Person implements Rider<AirCraft> {
+public class Pilot extends Person implements Rider<AirCraft> {
     AirCraft airCraft;
 
     public boolean mount(AirCraft airCraft) {
