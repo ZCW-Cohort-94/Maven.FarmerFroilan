@@ -23,13 +23,13 @@ public class Pilot<Aircraft> extends Person implements Rider<AirCraft> {
     }
 
     @Override
-    public boolean mount() {
-        return false;
+    public void mount() {
+
     }
 
     @Override
-    public boolean dismount() {
-        return false;
+    public void dismount() {
+
     }
 
     public String fly (AirCraft airCraft){
