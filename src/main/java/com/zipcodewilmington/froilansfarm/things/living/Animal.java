@@ -4,6 +4,11 @@ import com.zipcodewilmington.froilansfarm.Eater;
 import com.zipcodewilmington.froilansfarm.Edible;
 import com.zipcodewilmington.froilansfarm.NoiseMaker;
 
-public abstract class Animal implements Eater<Edible>, NoiseMaker {
+import java.util.Collections;
+
+public abstract class Animal<T extends Edible> implements Eater, NoiseMaker {
+    public void eat(){
+
+    }
 
 }

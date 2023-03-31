@@ -1,7 +1,7 @@
 package com.zipcodewilmington.froilansfarm.things.living;
 
-import com.zipcodewilmington.froilansfarm.Rideable;
-import com.zipcodewilmington.froilansfarm.Rider;
+
+import com.zipcodewilmington.froilansfarm.Edible;
 
 public abstract class Person extends Animal{
     String name;
@@ -10,5 +10,10 @@ public abstract class Person extends Animal{
     }
     public void setName(String name){
         this.name = name;
+    }
+
+    @Override
+    public void eat(Edible edible) {
+
     }
 }

@@ -4,7 +4,9 @@ package com.zipcodewilmington.froilansfarm.things.plant;
 import com.zipcodewilmington.froilansfarm.Edible;
 import com.zipcodewilmington.froilansfarm.Producer;
 
-public abstract class Crops<T extends Edible> implements Producer<T>{
+
+public abstract class Crops<T extends Edible> implements Producer<T> {
+
     private boolean hasBeenFertilized;
     private boolean hasBeenHarvested;
     T yield;
@@ -31,12 +33,4 @@ public abstract class Crops<T extends Edible> implements Producer<T>{
         this.hasBeenHarvested = hasBeenHarvested;
     }
 
-
-    @Override
-    public void yield(T Edible) {
-        if (hasBeenFertilized == true && hasBeenHarvested == true) {
-
-        }
-
-    }
 }
