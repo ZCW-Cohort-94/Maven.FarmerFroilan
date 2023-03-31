@@ -5,10 +5,10 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class TestPilot {
+    Pilot pilot = new Pilot();
 
     @Test
     public void makeNoiseTest(){
-        Pilot pilot = new Pilot();
 
         String expected = "Bombs Away!";
         String actual = pilot.makeNoise();
@@ -18,7 +18,6 @@ public class TestPilot {
 
     @Test
     public void mountTest(){
-        Pilot pilot = new Pilot();
 
         boolean expected = false;
         boolean actual = pilot.mount();
@@ -28,7 +27,6 @@ public class TestPilot {
 
     @Test
     public void dismountTest(){
-        Pilot pilot = new Pilot();
 
         boolean expected = false;
         boolean actual = pilot.dismount();
