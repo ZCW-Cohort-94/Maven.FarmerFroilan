@@ -5,5 +5,5 @@ import com.zipcodewilmington.froilansfarm.things.living.Horse;
 
 import java.util.ArrayList;
 
-public class Stables extends ArrayList<Horse> implements Storage {
+public class Stables extends ArrayList<Horse> {
 }
