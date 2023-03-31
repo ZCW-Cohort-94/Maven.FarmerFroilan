@@ -14,6 +14,7 @@ public class Botanist extends Person{
     public String makeNoise() {
         return "Brawndo has what plants crave!";
     }
+
     public void plant(Crops crop, int plot){
         Field.getField().add();
     }

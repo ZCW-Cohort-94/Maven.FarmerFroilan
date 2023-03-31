@@ -24,4 +24,9 @@ public abstract class Pilot extends Person implements Rider<AirCraft> {
     public void eat() {
 
     }
+
+    @Override
+    public String makeNoise() {
+        return "Bombs Away!";
+    }
 }
