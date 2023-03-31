@@ -3,8 +3,8 @@ package com.zipcodewilmington.froilansfarm.things.living;
 import com.zipcodewilmington.froilansfarm.Rider;
 import com.zipcodewilmington.froilansfarm.things.machine.AirCraft;
 
-public class Pilot<Aircraft> extends Person implements Rider<AirCraft> {
-    Pilot pilot = new Pilot();
+public class Pilot<T extends AirCraft> extends Person implements Rider<T> {
+//    Pilot<AirCraft> pilot = new Pilot<>();
     AirCraft airCraft;
 
     public Pilot() {
@@ -23,12 +23,13 @@ public class Pilot<Aircraft> extends Person implements Rider<AirCraft> {
     }
 
     @Override
-    public void mount() {
-
+    public void mount(AirCraft airCraft) {
+        airCraft.setMounted(true);
     }
 
     @Override
-    public void dismount() {
+    public void dismount(AirCraft airCraft) {
+        airCraft.setMounted(false);
 
     }
 
