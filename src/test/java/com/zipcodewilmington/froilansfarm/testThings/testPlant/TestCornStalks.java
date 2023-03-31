@@ -66,8 +66,8 @@ public class TestCornStalks {
 
     @Test
     public void testYield() {
-        Tomato tomato = new Tomato();
-        TomatoPlants test = new TomatoPlants(tomato);
+        CornEars tomato = new CornEars();
+        CornStalks test = new CornStalks(tomato);
         boolean a = true;
         test.yield(a);
 
