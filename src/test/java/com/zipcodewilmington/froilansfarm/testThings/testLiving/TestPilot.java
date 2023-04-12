@@ -25,7 +25,7 @@ public class TestPilot {
         boolean actual;
 
         pilot.mount(airCraft);
-        actual = airCraft.isMounted();
+        actual = airCraft.getMounted();
 
         Assert.assertEquals(expected, actual);
 
@@ -41,7 +41,7 @@ public class TestPilot {
         pilot.mount(airCraft);
         pilot.dismount(airCraft);
 
-        actual = airCraft.isMounted();
+        actual = airCraft.getMounted();
 
         Assert.assertEquals(expected, actual);
     }
