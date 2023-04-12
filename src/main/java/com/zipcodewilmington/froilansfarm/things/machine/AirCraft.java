@@ -6,4 +6,10 @@ import com.zipcodewilmington.froilansfarm.things.living.Pilot;
 
 public class AirCraft<Pilot> extends Vehicle {
 
+
+    @Override
+    public String makeNoise() {
+        return "airplane noise";
+    }
+
 }

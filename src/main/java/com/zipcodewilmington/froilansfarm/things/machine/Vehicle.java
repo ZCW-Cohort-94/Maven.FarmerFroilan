@@ -4,10 +4,10 @@ import com.zipcodewilmington.froilansfarm.NoiseMaker;
 import com.zipcodewilmington.froilansfarm.Rideable;
 import com.zipcodewilmington.froilansfarm.Rider;
 
-public class Vehicle implements NoiseMaker, Rideable {
+public abstract class Vehicle<T extends Rider> implements NoiseMaker, Rideable<T> {
 
-    public boolean isMounted() {
-        return isMounted;
+    public boolean getMounted() {
+        return this.isMounted;
     }
 
     public void setMounted(boolean mounted) {
@@ -16,8 +16,5 @@ public class Vehicle implements NoiseMaker, Rideable {
 
     private boolean isMounted;
 
-    @Override
-    public String makeNoise() {
-        return "Vroom vroom!";
-    }
+
 }
