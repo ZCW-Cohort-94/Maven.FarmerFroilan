@@ -33,7 +33,7 @@ public class Pilot<T extends AirCraft> extends Person implements Rider<T> {
 
     }
 
-    public String fly (AirCraft airCraft){
-        return "I'm cropdusting!";
-    }
+//    public String fly (AirCraft airCraft){
+//        return "I'm flying!";
+//    }
 }
