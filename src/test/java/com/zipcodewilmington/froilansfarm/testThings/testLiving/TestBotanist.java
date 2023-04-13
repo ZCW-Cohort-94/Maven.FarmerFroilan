@@ -25,7 +25,7 @@ public class TestBotanist {
     @Test
     public void testMakeNoise(){
         String actual = person.makeNoise();
-        String expected = "Brawnda has what plants crave!";
+        String expected = "Brawndo has what plants crave!";
         Assert.assertEquals(expected,actual);
     }
     @Test

@@ -16,7 +16,7 @@ public class Botanist extends Person{
         return "Brawndo has what plants crave!";
     }
 
-    public void plant(Crops crop, int plot){
+ /*   public void plant(Crops crop, CropRow<Crop>){
      //   Field.getField().add();
-    }
+    }*/
 }
