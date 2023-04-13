@@ -15,6 +15,6 @@ public abstract class Person extends Animal{
 
     @Override
     public void eat(Edible edible) {
-
+    edible = null;
     }
 }

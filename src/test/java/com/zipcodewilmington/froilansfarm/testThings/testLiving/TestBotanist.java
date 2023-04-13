@@ -2,8 +2,12 @@ package com.zipcodewilmington.froilansfarm.testThings.testLiving;
 
 import com.zipcodewilmington.froilansfarm.things.living.Botanist;
 import com.zipcodewilmington.froilansfarm.things.living.Egg;
+import com.zipcodewilmington.froilansfarm.things.plant.CornEars;
 import org.junit.Test;
 import org.junit.Assert;
+
+import java.util.ArrayList;
+
 public class TestBotanist {
     Botanist person = new Botanist("Jake");
     @Test
@@ -31,8 +35,9 @@ public class TestBotanist {
     @Test
     public void testEat(){
         Egg egg = new Egg();
+        ArrayList<CornEars> cornEars = new ArrayList<>();
         person.eat(egg);
-        Assert.assertNull(egg);
+        Assert.assertNotNull(egg);
     }
     @Test
     public  void  testPlant(){

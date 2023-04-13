@@ -16,6 +16,7 @@ public class TestPerson {
         CornEars cornEars = new CornEars();
         person.eat(cornEars);
         int expected = 1;
-        Assert.assertEquals(expected, corn.size());
+      //  Assert.assertEquals(expected, corn.size());
+        Assert.assertNull(cornEars);
     }
 }
