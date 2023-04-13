@@ -1,5 +1,6 @@
 package com.zipcodewilmington.froilansfarm.things.living;
 
+import com.zipcodewilmington.froilansfarm.Edible;
 import com.zipcodewilmington.froilansfarm.Rider;
 import com.zipcodewilmington.froilansfarm.things.machine.AirCraft;
 
@@ -13,7 +14,7 @@ public class Pilot<T extends AirCraft> extends Person implements Rider<T> {
     }
 
     @Override
-    public void eat() {
+    public void eat(Edible edible) {edible = null;
 
     }
 
